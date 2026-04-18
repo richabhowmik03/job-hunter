@@ -206,37 +206,36 @@ def _fetch_guest_pages(
 
 
 def _parse_job_cards_html(html: str) -> list[dict[str, Any]]:
-    """Extract job cards from guest search HTML."""
-    blocks = re.split(
-        r'<li(?=[^>]*\bclass="[^"]*jobs-search-results__list-item)',
-        html,
-    )
+    """Extract job cards from guest search HTML.
+
+    LinkedIn changed their markup — cards are now <div data-entity-urn=...>
+    instead of <li class="jobs-search-results__list-item">.
+    """
+    # Split on each job card div
+    blocks = re.split(r'(?=<div[^>]+data-entity-urn="urn:li:jobPosting:)', html)
     out: list[dict[str, Any]] = []
-    for b in blocks[1:]:
+    for b in blocks:
         m = re.search(r'data-entity-urn="urn:li:jobPosting:(\d+)"', b)
         if not m:
             continue
         job_id = m.group(1)
+
         title_m = re.search(
-            r'class="[^"]*base-search-card__title[^"]*"[^>]*>\s*([^<]+)',
-            b,
+            r'class="[^"]*base-search-card__title[^"]*"[^>]*>\s*([^<]+)', b
         )
         company_m = re.search(
-            r'class="[^"]*base-search-card__subtitle[^"]*"[^>]*>\s*([^<]+)',
-            b,
+            r'class="[^"]*base-search-card__subtitle[^"]*"[^>]*>(?:\s*<[^>]+>)?\s*([^<]+)', b
         )
         loc_m = re.search(
-            r'class="[^"]*job-search-card__location[^"]*"[^>]*>\s*([^<]+)',
-            b,
+            r'class="[^"]*job-search-card__location[^"]*"[^>]*>\s*([^<]+)', b
         )
-        listed_m = re.search(
-            r'class="[^"]*job-search-card__listdate[^"]*"[^>]*>\s*([^<]+)',
-            b,
-        )
+        # Use datetime attribute on <time> — reliable and clean
+        date_m = re.search(r'<time[^>]+datetime="([^"]+)"', b)
+
         title = title_m.group(1).strip() if title_m else ""
         company = company_m.group(1).strip() if company_m else ""
         location = loc_m.group(1).strip() if loc_m else ""
-        listed_at = listed_m.group(1).strip() if listed_m else ""
+        listed_at = date_m.group(1).strip() if date_m else ""
         url = f"https://www.linkedin.com/jobs/view/{job_id}"
         out.append(
             {
@@ -284,6 +283,14 @@ def _parse_posted(listed_at: str) -> datetime | None:
         return None
     s = listed_at.strip().lower()
     now = datetime.now(timezone.utc)
+    # ISO date from <time datetime="YYYY-MM-DD">
+    if re.match(r"\d{4}-\d{2}-\d{2}", s):
+        try:
+            from datetime import timedelta
+            d = datetime.strptime(s[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            return d
+        except ValueError:
+            return None
     if "hour" in s or "minute" in s or "just now" in s:
         return now
     if "day" in s:
@@ -291,9 +298,7 @@ def _parse_posted(listed_at: str) -> datetime | None:
         if m:
             try:
                 from datetime import timedelta
-
-                days = int(m.group(1))
-                return now - timedelta(days=days)
+                return now - timedelta(days=int(m.group(1)))
             except ValueError:
                 return None
     return None

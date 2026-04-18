@@ -10,8 +10,9 @@ __pycache__/
 .env
 *.log
 
-# Local LinkedIn ingest JSON (CI generates this per run)
-data/
+# LinkedIn ingest dir — ignore everything except the committed ingest file
+data/*
+!data/linkedin_ingest.json
 
 # Profile and resume contain PII — stored as GitHub secrets, written at CI runtime
 profiles/
