@@ -4,14 +4,43 @@ import re
 
 from .models import Job, Profile
 
+# Broad ML/AI domain keywords — if ANY of these appear in the title the job is
+# worth sending to the LLM scorer. This intentionally casts a wide net; the LLM
+# does the precise fit judgment.
+_DOMAIN_KEYWORDS = [
+    "machine learning", "ml ", " ml", "data scien", "ai ", " ai",
+    "artificial intelligence", "deep learning", "neural", "nlp",
+    "natural language", "computer vision", "llm", "large language",
+    "generative", "gen ai", "genai", "reinforcement", "recommendation",
+    "analytics engineer", "data engineer", "research scientist",
+    "applied scientist", "mlops", "ml platform", "ml infra",
+    "prompt engineer", "ai engineer", "ai researcher",
+]
+
+# Domains that are clearly irrelevant regardless of any ML keywords present
+_DOMAIN_BLOCKLIST = [
+    "sales", "marketing", "recruiter", "talent acquisition",
+    "account manager", "customer success", "business development",
+    "finance", "accounting", "hr ", " hr", "human resources",
+    "legal", "paralegal", "administrative", "receptionist",
+]
+
 
 def _title_match(title: str, allowed: list[str]) -> bool:
     t = title.lower()
+    # First check the explicit profile allowlist (exact phrase / all tokens)
     for phrase in allowed:
         p = phrase.lower()
         if re.search(rf"\b{re.escape(p)}\b", t):
             return True
         if all(tok in t for tok in p.split()):
+            return True
+    # Fallback: broad domain keyword match — catches "Data Science Engineer",
+    # "Deep Learning Researcher", "CV Engineer", etc.
+    if any(kw in t for kw in _DOMAIN_KEYWORDS):
+        # But exclude obviously irrelevant domain titles that happen to contain
+        # a keyword (e.g. "AI Sales Manager")
+        if not any(bl in t for bl in _DOMAIN_BLOCKLIST):
             return True
     return False
 

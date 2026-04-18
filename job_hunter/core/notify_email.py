@@ -73,33 +73,55 @@ def _discovery_html(discovery: dict | None) -> str:
     )
 
 
+def _jobs_table(jobs: list[Job]) -> str:
+    return (
+        "<table border='1' cellpadding='8' cellspacing='0' "
+        "style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;width:100%'>"
+        "<tr style='background:#f5f5f5'>"
+        "<th align='left'>Role</th><th>Fit</th><th align='left'>Why</th>"
+        "<th>Posted</th><th>Links</th></tr>"
+        + "".join(_row(j) for j in jobs)
+        + "</table>"
+    )
+
+
 def render_html(
     jobs: list[Job],
     health: HealthSummary,
     profile_name: str,
     discovery: dict | None = None,
+    below_threshold: list[Job] | None = None,
 ) -> str:
     jobs_sorted = sorted(
         jobs,
-        key=lambda j: (
-            VERDICT_ORDER.get(j.fit_verdict or "weak", 3),
-            -(j.fit_score or 0),
-        ),
+        key=lambda j: (VERDICT_ORDER.get(j.fit_verdict or "weak", 3), -(j.fit_score or 0)),
     )
+
     if jobs_sorted:
-        body = (
-            "<table border='1' cellpadding='8' cellspacing='0' "
-            "style='border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;width:100%'>"
-            "<tr style='background:#f5f5f5'>"
-            "<th align='left'>Role</th><th>Fit</th><th align='left'>Why</th>"
-            "<th>Posted</th><th>Links</th></tr>"
-            + "".join(_row(j) for j in jobs_sorted)
-            + "</table>"
-        )
+        body = _jobs_table(jobs_sorted)
     else:
         body = (
             "<p style='font-family:Arial,sans-serif;color:#555'>"
             "No new matches in the last 24 hours. Pipeline ran successfully.</p>"
+        )
+
+    # Below-threshold section — collapsed <details> so it doesn't clutter the email
+    below_html = ""
+    if below_threshold:
+        below_sorted = sorted(
+            below_threshold,
+            key=lambda j: (VERDICT_ORDER.get(j.fit_verdict or "weak", 3), -(j.fit_score or 0)),
+        )
+        below_html = (
+            "<details style='margin-top:24px;font-family:Arial,sans-serif'>"
+            f"<summary style='cursor:pointer;color:#555;font-size:13px'>"
+            f"&#9660; {len(below_sorted)} more jobs scored below threshold (click to expand)"
+            f"</summary>"
+            "<p style='color:#888;font-size:12px;margin:8px 0'>These passed source/title/location "
+            "filters but scored below your <code>min_fit_score</code>. Review occasionally to "
+            "tune your threshold.</p>"
+            + _jobs_table(below_sorted)
+            + "</details>"
         )
 
     return (
@@ -109,6 +131,7 @@ def render_html(
         f"{len(jobs_sorted)} matches &middot; "
         f"{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}</p>"
         f"{body}"
+        f"{below_html}"
         f"{_discovery_html(discovery)}"
         f"{health.to_html()}"
         f"</body></html>"

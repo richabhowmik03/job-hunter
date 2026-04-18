@@ -451,6 +451,7 @@ def run(
     else:
         logger.info("Skipping company discovery (dry_run=%s, discover=%s)", dry_run, discover)
 
+    below_threshold = [j for j in jobs if (j.fit_score or 0) < profile.min_fit_score]
     jobs = [j for j in jobs if (j.fit_score or 0) >= profile.min_fit_score]
     after_llm = len(jobs)
     _ph(
@@ -463,7 +464,11 @@ def run(
 
     health = build_health(source_results, failure_counts)
     logger.info("Rendering email HTML…")
-    html = render_html(jobs, health, profile.name, discovery=discovery_result)
+    html = render_html(
+        jobs, health, profile.name,
+        discovery=discovery_result,
+        below_threshold=below_threshold,
+    )
 
     subject = f"[Job Hunter] {len(jobs)} matches for {profile.name}"
     if health.action_needed:
