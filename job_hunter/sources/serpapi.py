@@ -12,13 +12,20 @@ from .base import get, truncate
 SOURCE_NAME = "serpapi"
 
 
-def _json_or_fail(resp: requests.Response) -> dict:
-    """SerpAPI often returns HTTP 200 with an ``error`` field when quota is exhausted."""
+_NO_RESULTS_MSG = "google hasn't returned any results for this query"
+
+
+def _json_or_fail(resp: requests.Response) -> dict | None:
+    """Parse SerpAPI response. Returns None for empty-results (not an error),
+    raises RuntimeError for quota exhaustion or real errors."""
     try:
         data = resp.json()
     except json.JSONDecodeError as e:
         raise RuntimeError(f"SerpAPI invalid JSON: {e}") from e
     if isinstance(data, dict) and data.get("error"):
+        msg = str(data["error"]).lower()
+        if _NO_RESULTS_MSG in msg:
+            return None  # not an error — just no jobs for this query
         raise RuntimeError(f"SerpAPI: {data['error']}")
     return data
 
@@ -63,6 +70,8 @@ def fetch(profile: Profile) -> list[RawJob]:
             },
         )
         data = _json_or_fail(resp)
+        if data is None:
+            continue  # no results for this query — not an error
         for job in data.get("jobs_results", []) or []:
             jid = job.get("job_id") or job.get("share_link") or ""
             if not jid or jid in seen_ids:
