@@ -127,10 +127,22 @@ def _fetch_guest_pages(
 
     search_delay = float(os.getenv("LINKEDIN_SEARCH_DELAY", "3.0"))
 
+    # For the ingest scrape we want a wider time window (7 days) so the file
+    # stays useful for multiple CI runs without needing daily refreshes.
+    # For live fetches (non-ingest path) keep the 24h filter.
+    time_filter = os.getenv("LINKEDIN_TIME_FILTER", "r86400")
+
+    # Deduplicate locations — "Bangalore" and "Bengaluru" resolve to the same
+    # LinkedIn search. Use a fixed set of useful LinkedIn location strings.
+    _LI_LOCATIONS = ["Bangalore, Karnataka, India", "India"]
+    search_locations = _LI_LOCATIONS
+
+    all_titles = profile.target_titles + profile.related_titles
+
     with httpx.Client(timeout=30.0, follow_redirects=True) as client:
         first_query = True
-        for title in profile.target_titles:
-            for loc in profile.locations:
+        for title in all_titles:
+            for loc in search_locations:
                 if not first_query:
                     time.sleep(search_delay)
                 first_query = False
@@ -141,7 +153,7 @@ def _fetch_guest_pages(
                     params = {
                         "keywords": title,
                         "location": loc,
-                        "f_TPR": "r86400",
+                        "f_TPR": time_filter,
                         "sortBy": "DD",
                         "start": str(start),
                     }
