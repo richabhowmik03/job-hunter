@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-hunter"
+version = "0.1.0"
+description = "Personal job bot: scrape sources, score fit, email matches."
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["job_hunter*"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }

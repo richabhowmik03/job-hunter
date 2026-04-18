@@ -1,0 +1,17 @@
+web/node_modules/
+web/dist/
+
+*.egg-info/
+
+__pycache__/
+*.pyc
+.venv/
+.venvs/
+.env
+*.log
+
+# Local LinkedIn ingest JSON (CI generates this per run)
+data/
+
+# Profile and resume contain PII — stored as GitHub secrets, written at CI runtime
+profiles/

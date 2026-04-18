@@ -1,0 +1,61 @@
+name: job-hunter
+
+on:
+  schedule:
+    # 03:30 UTC = 09:00 IST, 13:30 UTC = 19:00 IST
+    - cron: "30 3,13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: job-hunter-run
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Write profile and resume from secrets
+        env:
+          PROFILE_YAML: ${{ secrets.PROFILE_YAML }}
+          RESUME_MD: ${{ secrets.RESUME_MD }}
+        run: |
+          mkdir -p profiles
+          printf '%s' "$PROFILE_YAML" > profiles/richa.yaml
+          printf '%s' "$RESUME_MD" > profiles/richa_resume.md
+
+      # Guest LinkedIn scrape → JSON; main step reads via LINKEDIN_INGEST_PATH (no live LI in CI).
+      - name: Scrape LinkedIn (guest API) to ingest file
+        run: python -m job_hunter.cli_linkedin_scrape --root . --out data/linkedin_ingest.json --fast
+        env:
+          LINKEDIN_MAX_PAGES: "10"
+
+      - name: Run job hunter
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+          LINKEDIN_INGEST_PATH: data/linkedin_ingest.json
+        run: python -m job_hunter.main
+
+      - name: Commit updated state
+        run: |
+          git config user.name "job-hunter-bot"
+          git config user.email "job-hunter-bot@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain state.db)" ]]; then
+            git add state.db
+            git commit -m "chore: update state [skip ci]"
+            git push
+          fi

@@ -1,0 +1,9 @@
+profile: richa
+
+enabled_sources:
+  - greenhouse
+  - lever
+  - rss
+  - serpapi
+  - linkedin
+  - naukri
