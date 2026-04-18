@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: job-hunter
+    runtime: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt && cd web && npm ci && npm run build
+    startCommand: uvicorn job_hunter.server:create_app --factory --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SERPAPI_KEY
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_APP_PASSWORD
+        sync: false
+      - key: SMTP_TO
+        sync: false
+      - key: JOB_HUNTER_UI_OWNER_EMAIL
+        sync: false
+      - key: PROFILE_YAML
+        sync: false
+      - key: RESUME_MD
+        sync: false

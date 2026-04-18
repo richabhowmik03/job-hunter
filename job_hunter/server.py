@@ -248,7 +248,30 @@ def _spawn_run(run_id: str, root: Path, email: str) -> None:
     threading.Thread(target=worker, daemon=True).start()
 
 
+def _bootstrap_profile_from_env() -> None:
+    """Write profiles/richa.yaml and richa_resume.md from env vars if present.
+
+    Used on hosted deployments (Render etc.) where the profiles/ dir isn't
+    committed. No-op if the files already exist or env vars aren't set.
+    """
+    profile_yaml = os.environ.get("PROFILE_YAML", "").strip()
+    resume_md = os.environ.get("RESUME_MD", "").strip()
+    if not profile_yaml and not resume_md:
+        return
+    profiles_dir = _repo_root() / "profiles"
+    profiles_dir.mkdir(parents=True, exist_ok=True)
+    if profile_yaml:
+        p = profiles_dir / "richa.yaml"
+        if not p.exists():
+            p.write_text(profile_yaml)
+    if resume_md:
+        r = profiles_dir / "richa_resume.md"
+        if not r.exists():
+            r.write_text(resume_md)
+
+
 def create_app() -> FastAPI:
+    _bootstrap_profile_from_env()
     app = FastAPI(title="Job Hunter UI")
 
     app.add_middleware(
