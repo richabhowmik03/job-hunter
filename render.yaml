@@ -23,7 +23,3 @@ services:
         sync: false
       - key: JOB_HUNTER_UI_OWNER_EMAIL
         sync: false
-      - key: PROFILE_YAML
-        sync: false
-      - key: RESUME_MD
-        sync: false
