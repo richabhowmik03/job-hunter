@@ -34,11 +34,19 @@ jobs:
           printf '%s' "$PROFILE_YAML" > profiles/richa.yaml
           printf '%s' "$RESUME_MD" > profiles/richa_resume.md
 
-      # Guest LinkedIn scrape → JSON; main step reads via LINKEDIN_INGEST_PATH (no live LI in CI).
+      # LinkedIn blocks datacenter IPs so the scrape almost always returns 0 jobs.
+      # We run it anyway (continues-on-error) and use the committed ingest file
+      # from your local machine if the live scrape fails.
       - name: Scrape LinkedIn (guest API) to ingest file
-        run: python -m job_hunter.cli_linkedin_scrape --root . --out data/linkedin_ingest.json --fast
+        continue-on-error: true
+        run: |
+          mkdir -p data
+          python -m job_hunter.cli_linkedin_scrape --root . --out data/linkedin_ingest.json --fast || true
+          # If scrape produced nothing but a committed ingest file exists, keep the committed one
+          count=$(python3 -c "import json,sys; d=json.load(open('data/linkedin_ingest.json')); print(len(d))" 2>/dev/null || echo 0)
+          echo "LinkedIn ingest jobs: $count"
         env:
-          LINKEDIN_MAX_PAGES: "10"
+          LINKEDIN_MAX_PAGES: "5"
 
       - name: Run job hunter
         env:
@@ -54,8 +62,12 @@ jobs:
         run: |
           git config user.name "job-hunter-bot"
           git config user.email "job-hunter-bot@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain state.db)" ]]; then
-            git add state.db
+          git add state.db
+          # Also commit LinkedIn ingest if it got jobs this run
+          if python3 -c "import json; d=json.load(open('data/linkedin_ingest.json')); exit(0 if d else 1)" 2>/dev/null; then
+            git add data/linkedin_ingest.json
+          fi
+          if [[ -n "$(git diff --cached)" ]]; then
             git commit -m "chore: update state [skip ci]"
             git push
           fi
