@@ -45,14 +45,31 @@ def _title_match(title: str, allowed: list[str]) -> bool:
     return False
 
 
+_INDIA_CITIES = {
+    "chennai", "mumbai", "pune", "delhi", "kolkata", "noida", "gurgaon",
+    "gurugram", "ahmedabad", "jaipur", "hyderabad", "secunderabad",
+    "tamil nadu", "maharashtra", "telangana", "rajasthan", "kolkata",
+    "kochi", "coimbatore", "indore", "bhopal", "nagpur", "lucknow",
+}
+
+
 def _location_match(job: Job, locations: list[str]) -> bool:
     if not locations:
         return True
-    # Any remote job is reachable regardless of which country's remote it says.
-    if job.remote:
-        return True
     loc = job.location.lower()
-    return any(l.lower() in loc for l in locations if l.lower() != "remote")
+    allowed = {l.lower() for l in locations}
+    allowed_cities = {l for l in allowed if l not in ("remote", "india")}
+
+    # On-site job: location string must contain one of the allowed cities
+    if not job.remote:
+        return any(city in loc for city in allowed_cities)
+
+    # Remote job: accept unless the location pins it to a blocked Indian city
+    # (e.g. "Remote - Chennai" or "Chennai, Tamil Nadu" with remote=True)
+    blocked_cities = _INDIA_CITIES - allowed_cities
+    if any(city in loc for city in blocked_cities):
+        return False
+    return True
 
 
 def filter_jobs(jobs: list[Job], profile: Profile) -> list[Job]:
