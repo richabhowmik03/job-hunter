@@ -1,14 +1,14 @@
 [
 {
 "source": "linkedin",
-"source_job_id": "4415787375",
-"url": "https://www.linkedin.com/jobs/view/4415787375",
-"title": "ML Engineer",
-"company": "Scoutit",
+"source_job_id": "4394475242",
+"url": "https://www.linkedin.com/jobs/view/4394475242",
+"title": "AI,ML GEN AI Engineer",
+"company": "Infosys",
 "location": "Bengaluru East, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "AI Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -18,99 +18,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4415778776",
-"url": "https://www.linkedin.com/jobs/view/4415778776",
-"title": "ML Engineer",
-"company": "Scoutit",
-"location": "Bengaluru South, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "AI Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415788384",
-"url": "https://www.linkedin.com/jobs/view/4415788384",
-"title": "ML Engineer",
-"company": "Scoutit",
+"source_job_id": "4406036811",
+"url": "https://www.linkedin.com/jobs/view/4406036811",
+"title": "Data Scientist",
+"company": "eBay",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "AI Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415769997",
-"url": "https://www.linkedin.com/jobs/view/4415769997",
-"title": "ML Engineer",
-"company": "Scoutit",
-"location": "Bengaluru North, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "AI Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415777904",
-"url": "https://www.linkedin.com/jobs/view/4415777904",
-"title": "ML Engineer",
-"company": "Scoutit",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "AI Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4416611022",
-"url": "https://www.linkedin.com/jobs/view/4416611022",
-"title": "Data Scientist_ML (India)",
-"company": "Hypersonix Inc.",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "AI Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415776909",
-"url": "https://www.linkedin.com/jobs/view/4415776909",
-"title": "ML Engineer",
-"company": "Scoutit",
-"location": "Bangalore Rural, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "AI Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -125,23 +40,6 @@
 "title": "Data Scientist",
 "company": "Capgemini",
 "location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "AI Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415776910",
-"url": "https://www.linkedin.com/jobs/view/4415776910",
-"title": "ML Engineer",
-"company": "Scoutit",
-"location": "Bangalore Urban district, India",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-19T00:00:00+00:00",
@@ -171,14 +69,133 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4415771911",
-"url": "https://www.linkedin.com/jobs/view/4415771911",
+"source_job_id": "4413605444",
+"url": "https://www.linkedin.com/jobs/view/4413605444",
+"title": "Machine Learning Engineer",
+"company": "HCLTech",
+"location": "Greater Bengaluru Area",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "AI Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4395475492",
+"url": "https://www.linkedin.com/jobs/view/4395475492",
+"title": "AI Engineer",
+"company": "Infosys",
+"location": "Bengaluru East, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "AI Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416106929",
+"url": "https://www.linkedin.com/jobs/view/4416106929",
+"title": "AI/ML Engineer – Generative AI",
+"company": "VRINDA INTERNATIONAL",
+"location": "Bengaluru East, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-19T00:00:00+00:00",
+"raw": {
+"search_title": "AI Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416990806",
+"url": "https://www.linkedin.com/jobs/view/4416990806",
+"title": "Data Scientist - Artificial Intelligence/Machine Learning",
+"company": "Timus",
+"location": "Bengaluru East, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "AI Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416150979",
+"url": "https://www.linkedin.com/jobs/view/4416150979",
+"title": "Data Scientist",
+"company": "Brillio",
+"location": "Bengaluru, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "AI Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4408285032",
+"url": "https://www.linkedin.com/jobs/view/4408285032",
+"title": "Machine Learning Engineer",
+"company": "Solventum",
+"location": "Bengaluru, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "AI Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4413399756",
+"url": "https://www.linkedin.com/jobs/view/4413399756",
+"title": "Artificial Intelligence Engineer",
+"company": "Meril",
+"location": "Chennai, Tamil Nadu, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "AI Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416141765",
+"url": "https://www.linkedin.com/jobs/view/4416141765",
 "title": "ML Engineer",
 "company": "Scoutit",
 "location": "India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "AI Engineer",
 "search_location": "India",
@@ -205,31 +222,31 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4354686558",
-"url": "https://www.linkedin.com/jobs/view/4354686558",
-"title": "Research Sciences INTERN",
-"company": "Microsoft",
-"location": "Bengaluru, Karnataka, India",
+"source_job_id": "4416929984",
+"url": "https://www.linkedin.com/jobs/view/4416929984",
+"title": "AI &amp; ML Engineer",
+"company": "Bristol Myers Squibb",
+"location": "Hyderabad, Telangana, India",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-19T00:00:00+00:00",
 "raw": {
-"search_title": "Data Scientist",
-"search_location": "Bangalore, Karnataka, India",
+"search_title": "AI Engineer",
+"search_location": "India",
 "page": 0,
 "start": 0
 }
 },
 {
 "source": "linkedin",
-"source_job_id": "4406220720",
-"url": "https://www.linkedin.com/jobs/view/4406220720",
+"source_job_id": "4406042640",
+"url": "https://www.linkedin.com/jobs/view/4406042640",
 "title": "Data Scientist",
-"company": "hackajob",
+"company": "eBay",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "Data Scientist",
 "search_location": "Bangalore, Karnataka, India",
@@ -239,14 +256,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416601906",
-"url": "https://www.linkedin.com/jobs/view/4416601906",
-"title": "Data Scientist 2",
-"company": "Dexcom",
+"source_job_id": "4417069316",
+"url": "https://www.linkedin.com/jobs/view/4417069316",
+"title": "Python GenAI with GCP",
+"company": "KPMG India",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "Data Scientist",
 "search_location": "Bangalore, Karnataka, India",
@@ -256,16 +273,118 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416632731",
-"url": "https://www.linkedin.com/jobs/view/4416632731",
+"source_job_id": "4384465308",
+"url": "https://www.linkedin.com/jobs/view/4384465308",
+"title": "Data Scientist - AI/ML - Engineer - Manager",
+"company": "PwC Acceleration Center India",
+"location": "Bengaluru East, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "Data Scientist",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417058968",
+"url": "https://www.linkedin.com/jobs/view/4417058968",
 "title": "Data Scientist",
-"company": "Tata Consultancy Services",
-"location": "Bangalore Urban, Karnataka, India",
+"company": "CoffeeBeans",
+"location": "Bengaluru, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "Data Scientist",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416173011",
+"url": "https://www.linkedin.com/jobs/view/4416173011",
+"title": "REF82383U - Data science (ML Algorithms, unsupervised techniques, Databricks, Python, PySpark, Azure,AB testing ) 3- 6 yrs exp",
+"company": "WNS",
+"location": "Bengaluru, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "Data Scientist",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4406056485",
+"url": "https://www.linkedin.com/jobs/view/4406056485",
+"title": "R &amp; R - Data and Analytics Engineering Artificial Intelligence and Machine Learning - Senior Associate",
+"company": "PwC Acceleration Center India",
+"location": "Bengaluru East, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "Data Scientist",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4413608268",
+"url": "https://www.linkedin.com/jobs/view/4413608268",
+"title": "Data Science Specialist",
+"company": "LTM",
+"location": "Pune City, Maharashtra, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "Data Scientist",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417068379",
+"url": "https://www.linkedin.com/jobs/view/4417068379",
+"title": "Data Scientist – AI, ML &amp; Agentic Automation",
+"company": "Cybage Software",
+"location": "Pune District, Maharashtra, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "Data Scientist",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4384049535",
+"url": "https://www.linkedin.com/jobs/view/4384049535",
+"title": "Data Scientist-Advanced Analytics",
+"company": "IBM",
+"location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-19T00:00:00+00:00",
 "raw": {
-"search_title": "Data Scientist",
+"search_title": "Machine Learning Engineer",
 "search_location": "Bangalore, Karnataka, India",
 "page": 0,
 "start": 0
@@ -282,144 +401,8 @@
 "description": "",
 "posted_at": "2026-05-19T00:00:00+00:00",
 "raw": {
-"search_title": "Data Scientist",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4413605444",
-"url": "https://www.linkedin.com/jobs/view/4413605444",
-"title": "Machine Learning Engineer",
-"company": "HCLTech",
-"location": "Greater Bengaluru Area",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-20T00:00:00+00:00",
-"raw": {
-"search_title": "Data Scientist",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415912904",
-"url": "https://www.linkedin.com/jobs/view/4415912904",
-"title": "Senior Data Scientist",
-"company": "Recro",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "Data Scientist",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4398246968",
-"url": "https://www.linkedin.com/jobs/view/4398246968",
-"title": "Data Scientist",
-"company": "algoleap",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "Data Scientist",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4413386353",
-"url": "https://www.linkedin.com/jobs/view/4413386353",
-"title": "DE&amp;A - AIML - Data Science - Machine Learning",
-"company": "Zensar Technologies",
-"location": "Pune Division, Maharashtra, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-20T00:00:00+00:00",
-"raw": {
-"search_title": "Data Scientist",
-"search_location": "India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4402428104",
-"url": "https://www.linkedin.com/jobs/view/4402428104",
-"title": "Senior Data Scientist",
-"company": "Reliance Industries Limited",
-"location": "Navi Mumbai, Maharashtra, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "Data Scientist",
-"search_location": "India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415908734",
-"url": "https://www.linkedin.com/jobs/view/4415908734",
-"title": "Data Scientist",
-"company": "Solytics Partners",
-"location": "Pune District, Maharashtra, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "Data Scientist",
-"search_location": "India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415786285",
-"url": "https://www.linkedin.com/jobs/view/4415786285",
-"title": "AI /ML Engineer",
-"company": "Dailoqa",
-"location": "Noida, Uttar Pradesh, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
 "search_title": "Machine Learning Engineer",
-"search_location": "India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4405988595",
-"url": "https://www.linkedin.com/jobs/view/4405988595",
-"title": "Data scientist",
-"company": "Qualcomm",
-"location": "Hyderabad, Telangana, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "Machine Learning Engineer",
-"search_location": "India",
+"search_location": "Bangalore, Karnataka, India",
 "page": 0,
 "start": 0
 }
@@ -443,14 +426,31 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4413335848",
-"url": "https://www.linkedin.com/jobs/view/4413335848",
-"title": "STEM Evaluator",
-"company": "Synstack Technologies",
-"location": "India",
+"source_job_id": "4417091780",
+"url": "https://www.linkedin.com/jobs/view/4417091780",
+"title": "AI ML Engineer",
+"company": "Innova ESI",
+"location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "Applied Scientist",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416194280",
+"url": "https://www.linkedin.com/jobs/view/4416194280",
+"title": "Gen AI Data Scientist - PAN INDIA",
+"company": "Tata Consultancy Services",
+"location": "Hyderabad, Telangana, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "Applied Scientist",
 "search_location": "India",
@@ -460,14 +460,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416929984",
-"url": "https://www.linkedin.com/jobs/view/4416929984",
-"title": "AI &amp; ML Engineer",
-"company": "Bristol Myers Squibb",
-"location": "Hyderabad, Telangana, India",
+"source_job_id": "4403956037",
+"url": "https://www.linkedin.com/jobs/view/4403956037",
+"title": "Research And Development Engineer",
+"company": "Meril",
+"location": "Vapi, Gujarat, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "ML Research Engineer",
 "search_location": "India",
@@ -477,14 +477,65 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416630733",
-"url": "https://www.linkedin.com/jobs/view/4416630733",
-"title": "Data Engineering- DBT, ETL/ELT, Snowflake,Data Modelling, Python, Airflow, DAX",
-"company": "WNS",
+"source_job_id": "4405557657",
+"url": "https://www.linkedin.com/jobs/view/4405557657",
+"title": "Senior AI Engineer",
+"company": "The Economist",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "NLP Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416178054",
+"url": "https://www.linkedin.com/jobs/view/4416178054",
+"title": "Engineer, SW",
+"company": "Lenovo",
+"location": "Bangalore Urban, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "NLP Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4407857819",
+"url": "https://www.linkedin.com/jobs/view/4407857819",
+"title": "MLOps Engineer",
+"company": "Aptiv",
+"location": "Bengaluru East, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "NLP Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417075153",
+"url": "https://www.linkedin.com/jobs/view/4417075153",
+"title": "Google DialogFlow Engineer",
+"company": "Miratech",
+"location": "Bengaluru, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "NLP Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -511,6 +562,40 @@
 },
 {
 "source": "linkedin",
+"source_job_id": "4417074194",
+"url": "https://www.linkedin.com/jobs/view/4417074194",
+"title": "Google DialogFlow Engineer",
+"company": "Miratech",
+"location": "Bengaluru, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "NLP Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4385265608",
+"url": "https://www.linkedin.com/jobs/view/4385265608",
+"title": "[Upcoming Roles] Developer Specialist - Application Engineering - Development &amp; Maintenance",
+"company": "Google Operations Center",
+"location": "Bengaluru East, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "NLP Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
 "source_job_id": "4413388600",
 "url": "https://www.linkedin.com/jobs/view/4413388600",
 "title": "AI ENGINEERING SPECIALIST - Copilot",
@@ -528,27 +613,10 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4394479328",
-"url": "https://www.linkedin.com/jobs/view/4394479328",
-"title": "Engineer",
-"company": "Qualcomm",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "NLP Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4417040603",
-"url": "https://www.linkedin.com/jobs/view/4417040603",
-"title": "Google Data Engineering - Developer",
-"company": "Tekskills Inc.",
+"source_job_id": "4357402987",
+"url": "https://www.linkedin.com/jobs/view/4357402987",
+"title": "MES Engineer",
+"company": "Tata Electronics",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
@@ -562,82 +630,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4407483675",
-"url": "https://www.linkedin.com/jobs/view/4407483675",
-"title": "Quantitative Engineer",
-"company": "Northern Trust",
+"source_job_id": "4394489101",
+"url": "https://www.linkedin.com/jobs/view/4394489101",
+"title": "Engineer, Senior",
+"company": "Qualcomm",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "NLP Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4416921831",
-"url": "https://www.linkedin.com/jobs/view/4416921831",
-"title": "Solutions Engineer, IN Solutions Engineering Team",
-"company": "Amazon",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "NLP Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4303397175",
-"url": "https://www.linkedin.com/jobs/view/4303397175",
-"title": "Engineering Division - GenAI and DocAI Engineering - Associate - Bengaluru",
-"company": "Goldman Sachs",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "NLP Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4407854507",
-"url": "https://www.linkedin.com/jobs/view/4407854507",
-"title": "Associate Data Engineering",
-"company": "GEA Group",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "NLP Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4384973969",
-"url": "https://www.linkedin.com/jobs/view/4384973969",
-"title": "Kubernetes &amp; Bare Metal Engineer, ISS",
-"company": "Pure Storage",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "NLP Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -664,45 +664,11 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416498779",
-"url": "https://www.linkedin.com/jobs/view/4416498779",
-"title": "AIML Engineer",
-"company": "Reqpedia",
+"source_job_id": "4405552698",
+"url": "https://www.linkedin.com/jobs/view/4405552698",
+"title": "Senior AI Engineer",
+"company": "The Economist",
 "location": "Gurugram, Haryana, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "NLP Engineer",
-"search_location": "India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4415908773",
-"url": "https://www.linkedin.com/jobs/view/4415908773",
-"title": "Engineer",
-"company": "Qualcomm",
-"location": "Hyderabad, Telangana, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "NLP Engineer",
-"search_location": "India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4413602456",
-"url": "https://www.linkedin.com/jobs/view/4413602456",
-"title": "GenAI Engineer",
-"company": "Persistent Systems",
-"location": "Pune City, Maharashtra, India",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-20T00:00:00+00:00",
@@ -715,17 +681,68 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4415937251",
-"url": "https://www.linkedin.com/jobs/view/4415937251",
-"title": "Executive – Engineering",
-"company": "Lupin",
-"location": "Pune/Pimpri-Chinchwad Area",
+"source_job_id": "4416183127",
+"url": "https://www.linkedin.com/jobs/view/4416183127",
+"title": "Engineer",
+"company": "Qualcomm",
+"location": "Hyderabad, Telangana, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "NLP Engineer",
 "search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417073194",
+"url": "https://www.linkedin.com/jobs/view/4417073194",
+"title": "Google DialogFlow Engineer",
+"company": "Miratech",
+"location": "Pune Division, Maharashtra, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "NLP Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417078133",
+"url": "https://www.linkedin.com/jobs/view/4417078133",
+"title": "Google DialogFlow Engineer",
+"company": "Miratech",
+"location": "Hyderabad, Telangana, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "NLP Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417060441",
+"url": "https://www.linkedin.com/jobs/view/4417060441",
+"title": "Software Engineer",
+"company": "Virtusa",
+"location": "Bangalore Urban, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "GenAI Engineer",
+"search_location": "Bangalore, Karnataka, India",
 "page": 0,
 "start": 0
 }
@@ -749,31 +766,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4413328601",
-"url": "https://www.linkedin.com/jobs/view/4413328601",
-"title": "Software Engineer",
-"company": "Virtusa",
-"location": "Bangalore Urban, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "GenAI Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4413309688",
-"url": "https://www.linkedin.com/jobs/view/4413309688",
-"title": "Software Engineer",
-"company": "Altisource",
+"source_job_id": "4406558737",
+"url": "https://www.linkedin.com/jobs/view/4406558737",
+"title": "Engineering Details - GenAI and DocAI Engineering - Associate - Bengaluru",
+"company": "Goldman Sachs",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "GenAI Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -783,10 +783,10 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416698581",
-"url": "https://www.linkedin.com/jobs/view/4416698581",
-"title": "Senior Quality Assurance Automation Engineer",
-"company": "Mphasis",
+"source_job_id": "4303397175",
+"url": "https://www.linkedin.com/jobs/view/4303397175",
+"title": "Engineering Division - GenAI and DocAI Engineering - Associate - Bengaluru",
+"company": "Goldman Sachs",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
@@ -834,14 +834,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416651741",
-"url": "https://www.linkedin.com/jobs/view/4416651741",
-"title": "AI/ML Engineer",
-"company": "SourcingXPress",
+"source_job_id": "4408269049",
+"url": "https://www.linkedin.com/jobs/view/4408269049",
+"title": "Senior Full-Stack Machine Learning Engineer (GenAI / Agentic Systems)",
+"company": "Poppulo",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "GenAI Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -851,14 +851,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4398379614",
-"url": "https://www.linkedin.com/jobs/view/4398379614",
-"title": "DE-AD-Cloud Infra and Platform Engineering-GDSN02",
-"company": "EY",
+"source_job_id": "4416129458",
+"url": "https://www.linkedin.com/jobs/view/4416129458",
+"title": "Associate Software Engineer - Bangalore",
+"company": "Magnit Global",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "GenAI Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -868,11 +868,28 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4415796194",
-"url": "https://www.linkedin.com/jobs/view/4415796194",
-"title": "Associate Software Engineer",
-"company": "NielsenIQ",
-"location": "Chennai, Tamil Nadu, India",
+"source_job_id": "4413602456",
+"url": "https://www.linkedin.com/jobs/view/4413602456",
+"title": "GenAI Engineer",
+"company": "Persistent Systems",
+"location": "Pune City, Maharashtra, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "GenAI Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416698581",
+"url": "https://www.linkedin.com/jobs/view/4416698581",
+"title": "Senior Quality Assurance Automation Engineer",
+"company": "Mphasis",
+"location": "Mumbai, Maharashtra, India",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-19T00:00:00+00:00",
@@ -902,11 +919,11 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4415922375",
-"url": "https://www.linkedin.com/jobs/view/4415922375",
-"title": "Software Engineer",
-"company": "Disprz",
-"location": "Chennai, Tamil Nadu, India",
+"source_job_id": "4415945952",
+"url": "https://www.linkedin.com/jobs/view/4415945952",
+"title": "AI / ML Engineer",
+"company": "Accenture services Pvt Ltd",
+"location": "Gurugram, Haryana, India",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-19T00:00:00+00:00",
@@ -953,10 +970,27 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4415785119",
-"url": "https://www.linkedin.com/jobs/view/4415785119",
-"title": "Junction Setup Engineer",
-"company": "CG-VAK Software &amp; Exports Ltd.",
+"source_job_id": "4395443590",
+"url": "https://www.linkedin.com/jobs/view/4395443590",
+"title": "Engineer - Highways",
+"company": "WSP in India",
+"location": "Bengaluru, Karnataka, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "LLM Engineer",
+"search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416921831",
+"url": "https://www.linkedin.com/jobs/view/4416921831",
+"title": "Solutions Engineer, IN Solutions Engineering Team",
+"company": "Amazon",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
@@ -970,14 +1004,14 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4405159187",
-"url": "https://www.linkedin.com/jobs/view/4405159187",
-"title": "E/E Eng.",
-"company": "Schaeffler",
+"source_job_id": "4369338586",
+"url": "https://www.linkedin.com/jobs/view/4369338586",
+"title": "Epoxy Engineer",
+"company": "Lumilens",
 "location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "LLM Engineer",
 "search_location": "Bangalore, Karnataka, India",
@@ -987,65 +1021,65 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416668374",
-"url": "https://www.linkedin.com/jobs/view/4416668374",
-"title": "Financial Engineering",
-"company": "HSBC",
-"location": "Bengaluru, Karnataka, India",
+"source_job_id": "4415937251",
+"url": "https://www.linkedin.com/jobs/view/4415937251",
+"title": "Executive – Engineering",
+"company": "Lupin",
+"location": "Pune/Pimpri-Chinchwad Area",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-19T00:00:00+00:00",
 "raw": {
 "search_title": "LLM Engineer",
-"search_location": "Bangalore, Karnataka, India",
+"search_location": "India",
 "page": 0,
 "start": 0
 }
 },
 {
 "source": "linkedin",
-"source_job_id": "4394483223",
-"url": "https://www.linkedin.com/jobs/view/4394483223",
-"title": "Engineer, Senior",
-"company": "Qualcomm",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "LLM Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4405141819",
-"url": "https://www.linkedin.com/jobs/view/4405141819",
-"title": "Synthesis Engineer",
-"company": "MediaTek",
-"location": "Bengaluru, Karnataka, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "LLM Engineer",
-"search_location": "Bangalore, Karnataka, India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4359994085",
-"url": "https://www.linkedin.com/jobs/view/4359994085",
+"source_job_id": "4377149501",
+"url": "https://www.linkedin.com/jobs/view/4377149501",
 "title": "CMPC ENGINEER",
 "company": "Larsen &amp; Toubro",
 "location": "Chennai, Tamil Nadu, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "LLM Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416150877",
+"url": "https://www.linkedin.com/jobs/view/4416150877",
+"title": "Senior Executive - Engineering",
+"company": "Nestlé",
+"location": "Samalkha, Haryana, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "LLM Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417057494",
+"url": "https://www.linkedin.com/jobs/view/4417057494",
+"title": "Team Member - Engineering (Injectable Process Engineer)",
+"company": "Dr. Reddy's Laboratories",
+"location": "Baddi, Himachal Pradesh, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "LLM Engineer",
 "search_location": "India",
@@ -1089,14 +1123,48 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4397954287",
-"url": "https://www.linkedin.com/jobs/view/4397954287",
-"title": "RF Engineering",
+"source_job_id": "4416110918",
+"url": "https://www.linkedin.com/jobs/view/4416110918",
+"title": "Engineering Executive",
+"company": "Accor",
+"location": "Greater Vijayawada District",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "LLM Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4417084725",
+"url": "https://www.linkedin.com/jobs/view/4417084725",
+"title": "Team Member Engineering – Instrumentation",
+"company": "Dr. Reddy's Laboratories",
+"location": "Hyderabad, Telangana, India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "LLM Engineer",
+"search_location": "India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4397942368",
+"url": "https://www.linkedin.com/jobs/view/4397942368",
+"title": "FATP _ Automation Engineering",
 "company": "Tata Electronics",
 "location": "Kolar, Karnataka, India",
 "remote": false,
 "description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
+"posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "LLM Engineer",
 "search_location": "India",
@@ -1106,34 +1174,34 @@
 },
 {
 "source": "linkedin",
-"source_job_id": "4416653529",
-"url": "https://www.linkedin.com/jobs/view/4416653529",
-"title": "SENIOR ENGINEER (NAVAL ARCHITECT)",
-"company": "Larsen &amp; Toubro",
-"location": "Chennai, Tamil Nadu, India",
-"remote": false,
-"description": "",
-"posted_at": "2026-05-19T00:00:00+00:00",
-"raw": {
-"search_title": "LLM Engineer",
-"search_location": "India",
-"page": 0,
-"start": 0
-}
-},
-{
-"source": "linkedin",
-"source_job_id": "4416990806",
-"url": "https://www.linkedin.com/jobs/view/4416990806",
-"title": "Data Scientist - Artificial Intelligence/Machine Learning",
-"company": "Timus",
-"location": "Bengaluru East, Karnataka, India",
+"source_job_id": "4413615458",
+"url": "https://www.linkedin.com/jobs/view/4413615458",
+"title": "Data Scientist-Artificial Intelligence",
+"company": "IBM",
+"location": "Bengaluru, Karnataka, India",
 "remote": false,
 "description": "",
 "posted_at": "2026-05-20T00:00:00+00:00",
 "raw": {
 "search_title": "ML Engineer",
 "search_location": "Bangalore, Karnataka, India",
+"page": 0,
+"start": 0
+}
+},
+{
+"source": "linkedin",
+"source_job_id": "4416184087",
+"url": "https://www.linkedin.com/jobs/view/4416184087",
+"title": "Data Scientist_ML",
+"company": "Jobgether",
+"location": "India",
+"remote": false,
+"description": "",
+"posted_at": "2026-05-20T00:00:00+00:00",
+"raw": {
+"search_title": "ML Engineer",
+"search_location": "India",
 "page": 0,
 "start": 0
 }
